@@ -34,6 +34,7 @@ body {
 .flowers {
   position: relative;
   transform: scale(0.9);
+  margin-bottom: 100px;
 }
 
 .flower {
@@ -1329,5 +1330,5 @@ body {
   position: absolute;
   color: #fdfdfd;
   z-index: 2;
-  bottom: 15px;
+  margin-bottom: 100px;
 }
