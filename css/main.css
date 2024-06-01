@@ -29,6 +29,7 @@ body {
   height: 100%;
   filter: blur(0.1vmin);
   background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 233, 255, 0.2)), repeating-linear-gradient(220deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), linear-gradient(90deg, rgb(7, 107, 42), rgb(240, 240, 240));
+  overflow: hidden;
 }
 
 .flowers {
@@ -1335,33 +1336,32 @@ body {
 
 .coracao {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: rgb(255, 114, 248);
+  width: 30px;
+  height: 30px;
+  background-color: rgb(131, 0, 125);
   transform: rotate(-45deg);
   left: 50%;
   top: 50%;
-  scale: .3;
-  opacity: 0;
+  scale: .1;
   transform: rotate(-45deg);
-  transition: transform 1s ease, opacity 1s ease;
+  transition: transform 1s ease, scale 1s ease;
 }
 .coracao:before,
 .coracao:after {
   content: '';
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 30px;
+  height: 30px;
   border-radius: 50px;
-  background-color: rgb(255, 114, 248);
+  background-color: rgb(131, 0, 125);
 }
 .coracao:before {
-  top: -50px;
+  top: -15px;
   left: 0;
 }
 .coracao:after {
   top: 0;
-  left: 50px;
+  left: 15px;
 }
 
 .desaparecer {
