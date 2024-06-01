@@ -1,7 +1,7 @@
 onload = () =>{
     document.body.classList.remove("container");
     setTimeout(() => {
-        setInterval(criarCoracao, 300);
+        setInterval(criarCoracao, 600);
     }, 4000);
 };
 
@@ -22,18 +22,15 @@ function criarCoracao() {
 
     // Inicia a transição de opacidade
     setTimeout(() => {
-      coracao.style.opacity = 1;
+      coracao.style.scale = 1;
     }, 100);
 
     setTimeout(() => {
         coracao.classList.add('desaparecer');
-      }, 1000); // Inicia a transição de desaparecimento após 2 segundos
+      }, 1000); // Inicia a transição de desaparecimento
 
-    // Remover o coração depois de 4 segundos
+    // Remover o coração
     setTimeout(() => {
       coracao.remove();
     }, 2000);
   }
-
-  // Criar um novo coração a cada 300 milissegundos
-  
